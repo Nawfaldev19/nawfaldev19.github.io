@@ -1,0 +1,29 @@
+.f2 { position: relative; display: flex; flex-direction: column; gap: 12px; min-height: 360px; font-family: var(--font-mono); font-size: 12px; color: var(--ink); }
+.f2-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.f2-seg { display: inline-flex; border: 1px solid var(--line); margin: 0; padding: 0; min-width: 0; }
+.f2-seg legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.f2-seg label { position: relative; display: block; padding: 8px 12px; cursor: pointer; color: var(--ink); text-transform: uppercase; letter-spacing: 0.06em; }
+.f2-seg label + label { border-left: 1px solid var(--line); }
+.f2-seg input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.f2-seg label:has(input:checked) { background: var(--accent); color: var(--bg); }
+.f2-seg label:has(input:focus-visible) { outline: 2px solid var(--focus); outline-offset: 2px; }
+.f2-seg label:has(input:disabled) { opacity: 0.5; cursor: default; }
+.f2-run { font: inherit; text-transform: uppercase; letter-spacing: 0.06em; padding: 8px 16px; color: var(--ink); background: transparent; border: 1px solid var(--accent); cursor: pointer; }
+.f2-run:hover:not(:disabled) { background: var(--accent); color: var(--bg); }
+.f2-run:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.f2-run:disabled { opacity: 0.6; cursor: default; }
+.f2-status { color: var(--ink-muted); }
+.f2-view { position: relative; flex: none; height: 250px; display: flex; }
+.f2-view svg { display: block; width: 100%; height: 100%; overflow: hidden; }
+.f2-tick { position: absolute; width: 10px; height: 10px; pointer-events: none; border: 0 solid var(--line); }
+.f2-tick.tl { top: -1px; left: -1px; border-top-width: 1px; border-left-width: 1px; }
+.f2-tick.tr { top: -1px; right: -1px; border-top-width: 1px; border-right-width: 1px; }
+.f2-tick.bl { bottom: -1px; left: -1px; border-bottom-width: 1px; border-left-width: 1px; }
+.f2-tick.br { bottom: -1px; right: -1px; border-bottom-width: 1px; border-right-width: 1px; }
+.f2-node { fill: var(--bg-raised); stroke: var(--line); stroke-width: 1; }
+.f2-edge { stroke: var(--line); stroke-width: 1; }
+.f2-hot { stroke: var(--accent); fill: var(--accent); }
+.f2-edge.f2-hot { opacity: 1; fill: none; }
+.f2-read { min-height: 64px; display: flex; flex-direction: column; gap: 6px; }
+.f2-fps { color: var(--ink); }
+.f2-note { color: var(--ink-muted); }

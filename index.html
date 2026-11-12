@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" data-theme="paper" data-motion="on" data-density="1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nawfal Imran: Senior Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Nawfal Imran, Senior Full Stack Developer in Lahore (UTC+5). I build node-based and canvas editors with React, TypeScript, React Flow, Konva, Rails and GraphQL. Open to remote roles."
+    />
+    <meta name="author" content="Nawfal Imran" />
+    <meta name="theme-color" content="#f4efe6" />
+    <link rel="canonical" href="https://nawfaldev19.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / Twitter -->
+    <!-- TODO: export public/og.svg to public/og.png (1200x630) before launch; og.png does not exist yet. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nawfaldev19.github.io/" />
+    <meta property="og:site_name" content="Nawfal Imran" />
+    <meta property="og:title" content="Nawfal Imran: Senior Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="I build the editors other apps are built around. React, React Flow, Konva, Rails, GraphQL. Open to remote roles."
+    />
+    <meta property="og:image" content="https://nawfaldev19.github.io/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A blueprint drawing sheet with the name Nawfal Imran, Senior Full Stack Developer." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nawfal Imran: Senior Full Stack Developer" />
+    <meta name="twitter:description" content="I build the editors other apps are built around. Open to remote roles." />
+    <meta name="twitter:image" content="https://nawfaldev19.github.io/og.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nawfal Imran",
+        "jobTitle": "Senior Full Stack Developer",
+        "url": "https://nawfaldev19.github.io/",
+        "sameAs": [
+          "https://github.com/Nawfaldev19",
+          "https://www.linkedin.com/in/nawfal-imran-886b13218/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lahore",
+          "addressCountry": "PK"
+        }
+      }
+    </script>
+
+    <!--
+      Applies saved settings before first paint (no theme flash).
+      Mirrors applyToDocument() in src/store/settings.ts: keep the ACCENTS values in sync.
+    -->
+    <script>
+      (function () {
+        try {
+          var A = {
+            orange: { paper: '#B4441A', blueprint: '#F08A4B' },
+            ink: { paper: '#24509E', blueprint: '#8FB3F2' },
+            green: { paper: '#2E6B3E', blueprint: '#7FC99A' },
+            teal: { paper: '#0E6A6A', blueprint: '#6FD0CC' },
+            ochre: { paper: '#8A5A00', blueprint: '#E7B451' }
+          };
+          var reduced = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+          var s = { theme: 'paper', accent: 'orange', motion: !reduced, density: 1 };
+          var saved = {};
+          try {
+            saved = JSON.parse(localStorage.getItem('nf-settings') || '{}') || {};
+          } catch (e) {}
+          for (var k in saved) if (Object.prototype.hasOwnProperty.call(saved, k)) s[k] = saved[k];
+          if (s.theme !== 'blueprint') s.theme = 'paper';
+          if (!A[s.accent]) s.accent = 'orange';
+          var r = document.documentElement;
+          r.setAttribute('data-theme', s.theme);
+          r.setAttribute('data-motion', s.motion ? 'on' : 'off');
+          r.setAttribute('data-density', String(s.density));
+          r.style.setProperty('--accent', A[s.accent][s.theme]);
+          r.style.colorScheme = s.theme === 'blueprint' ? 'dark' : 'light';
+          var m = document.querySelector('meta[name="theme-color"]');
+          if (m) m.setAttribute('content', s.theme === 'blueprint' ? '#0f2233' : '#f4efe6');
+        } catch (e) {}
+      })();
+    </script>
+
+    <!--
+      TODO: Cloudflare Web Analytics. Add the site token, then uncomment.
+      <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_TOKEN_HERE"}'></script>
+    -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="padding: 24px; font-family: Georgia, serif">
+        Nawfal Imran, Senior Full Stack Developer, Lahore (UTC+5). Open to remote roles.
+        <a href="https://github.com/Nawfaldev19">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/nawfal-imran-886b13218/">LinkedIn</a>
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

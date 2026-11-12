@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Source for og.png (1200x630). TODO: export to public/og.png. -->
+  <defs>
+    <pattern id="minor" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M12 0H0V12" fill="none" stroke="#e9eef3" stroke-opacity="0.05"/>
+    </pattern>
+    <pattern id="major" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="url(#minor)"/>
+      <path d="M60 0H0V60" fill="none" stroke="#e9eef3" stroke-opacity="0.11"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#0f2233"/>
+  <rect width="1200" height="630" fill="url(#major)"/>
+  <rect x="40.5" y="40.5" width="1119" height="549" fill="none" stroke="#e9eef3" stroke-opacity="0.6"/>
+  <g stroke="#e9eef3" fill="none">
+    <path d="M28 40H52M40 28V52"/><path d="M1148 40H1172M1160 28V52"/>
+    <path d="M28 590H52M40 578V602"/><path d="M1148 590H1172M1160 578V602"/>
+  </g>
+  <text x="90" y="120" font-family="JetBrains Mono, ui-monospace, Menlo, monospace" font-size="22" letter-spacing="2" fill="#F08A4B">S.00 · PORTFOLIO</text>
+  <text x="90" y="270" font-family="Fraunces, Georgia, serif" font-size="104" font-weight="600" fill="#e9eef3">Nawfal Imran</text>
+  <text x="90" y="340" font-family="Fraunces, Georgia, serif" font-size="44" fill="#e9eef3">Senior Full Stack Developer</text>
+  <text x="90" y="400" font-family="Fraunces, Georgia, serif" font-size="34" fill="#a9b6c3">I build the <tspan font-style="italic" fill="#F08A4B">editors</tspan> other apps are built around.</text>
+  <!-- title block -->
+  <g font-family="JetBrains Mono, ui-monospace, Menlo, monospace" font-size="17" fill="#e9eef3">
+    <rect x="90.5" y="470.5" width="1020" height="70" fill="#14293d" stroke="#e9eef3"/>
+    <path d="M430.5 470.5V540.5M720.5 470.5V540.5M900.5 470.5V540.5" stroke="#e9eef3"/>
+    <text x="108" y="497" fill="#a9b6c3" font-size="13">STATUS</text>
+    <text x="108" y="523">Open to remote roles</text>
+    <text x="448" y="497" fill="#a9b6c3" font-size="13">LOCATION</text>
+    <text x="448" y="523">Lahore · UTC+5</text>
+    <text x="738" y="497" fill="#a9b6c3" font-size="13">STACK</text>
+    <text x="738" y="523">React · Rails</text>
+    <text x="918" y="497" fill="#a9b6c3" font-size="13">SHEET</text>
+    <text x="918" y="523">1/1</text>
+  </g>
+</svg>
