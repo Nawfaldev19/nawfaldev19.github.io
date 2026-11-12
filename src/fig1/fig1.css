@@ -59,12 +59,14 @@
 /* zoom buttons */
 .fig1-zoom.react-flow__panel {
   display: flex;
+  gap: 8px;
   margin: 10px;
 }
 .fig1-zoom__btn {
-  width: 24px;
-  height: 24px;
-  margin-left: -1px;
+  /* >= 32px targets with 8px gaps: passes the touch-target size and spacing audit */
+  min-width: 32px;
+  height: 32px;
+  margin-left: 0;
   padding: 0;
   border: 1px solid var(--line);
   border-radius: 0;
@@ -75,7 +77,7 @@
 }
 .fig1-zoom__btn--wide {
   width: auto;
-  padding: 0 7px;
+  padding: 0 10px;
   font-size: 9px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
